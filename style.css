@@ -1,0 +1,148 @@
+:root {
+    --hue: 200;
+    --color-primary: hsl(var(--hue), 90%, 55%);
+    --color-light: hsl(var(--hue), 90%, 96%);
+    --color-dark: hsl(var(--hue), 50%, 25%);
+    --color-bg-rgba: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-header {
+    background-color: var(--color-primary);
+    height: 110px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 55px 25px 25px 25px;
+    text-align: center;
+}
+
+.card-name {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--color-dark);
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.card-role {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-box {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 13px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: bold;
+    color: var(--color-dark);
+    text-align: left;
+}
+
+.info-value {
+    color: #555;
+    text-align: right;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.btn-social:hover {
+    opacity: 0.85;
+}
+
+.btn-contact {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--color-bg-rgba);
+    transition: opacity 0.2s;
+}
+
+.btn-contact:hover {
+    opacity: 0.9;
+}
+
+.card-footer {
+    background-color: rgba(240, 240, 240, 0.6); 
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-pink {
+    --hue: 340;
+}
